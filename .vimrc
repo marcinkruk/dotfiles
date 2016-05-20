@@ -29,11 +29,12 @@ let &colorcolumn="81,".join(range(81,999),",")
 
 "highlight LineNr ctermfg=grey
 set cursorline
-"hi CursorLine   guibg=Grey40
+hi CursorLine   guibg=Grey40
 
 
 "autocmd vimenter * NERDTree
-set showcmd
+set showcmd	"shows keystrokes in normal mode at the bottom of the screen"
+set showtabline=2 "shows tabs at the top of the screen"
 
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
