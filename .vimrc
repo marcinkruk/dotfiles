@@ -36,6 +36,7 @@ set cursorline
 "autocmd vimenter * NERDTree
 set showcmd	"shows keystrokes in normal mode at the bottom of the screen"
 set showtabline=2 "shows tabs at the top of the screen"
+set statusline=2 "statusline at the bottom always visible"
 
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
