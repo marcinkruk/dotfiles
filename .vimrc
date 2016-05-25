@@ -44,3 +44,4 @@ if &term =~ '256color'
   set t_ut=
 endif
 
+set incsearch " highlights searched string while typing "
