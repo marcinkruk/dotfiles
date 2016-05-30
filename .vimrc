@@ -58,3 +58,6 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+
+set nowrap
+set scrolloff=1
