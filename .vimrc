@@ -19,7 +19,8 @@ set nu	"line numbering"
 set formatoptions+=r "comment expansion"
 set fo+=j	"for smart comment expansion"
 
-let g:solarized_termcolors=256
+
+"let g:solarized_termcolors=256
 syntax enable
 set bg=dark
 colorscheme solarized
@@ -29,12 +30,13 @@ let &colorcolumn="81,".join(range(81,999),",")
 
 "highlight LineNr ctermfg=grey
 set cursorline
-hi CursorLine   guibg=Grey40
+"hi CursorLine   guibg=Grey40
 
 
 "autocmd vimenter * NERDTree
 set showcmd	"shows keystrokes in normal mode at the bottom of the screen"
 set showtabline=2 "shows tabs at the top of the screen"
+set statusline=2 "statusline at the bottom always visible"
 
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
