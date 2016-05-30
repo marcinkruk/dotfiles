@@ -44,3 +44,15 @@ if &term =~ '256color'
 endif
 
 set incsearch " highlights searched string while typing "
+set laststatus=2
+
+"ctrl + j to break line in normal mode
+nnoremap <NL> i<CR><ESC>
+
+" search results appear in the middle of the screen
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
