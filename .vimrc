@@ -1,4 +1,4 @@
-execute pathogen#infect()	
+execute pathogen#infect()
 
 set exrc "
 set secure
@@ -20,7 +20,7 @@ set formatoptions+=r "comment expansion"
 set fo+=j	"for smart comment expansion"
 
 
-"let g:solarized_termcolors=256
+let g:solarized_termcolors=256
 syntax enable
 set bg=dark
 colorscheme solarized
@@ -61,3 +61,10 @@ nnoremap g# g#zz
 
 set nowrap
 set scrolloff=1
+
+" highlight extra whitespaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+" Show trailing whitespace:
+match ExtraWhitespace /\s\+$/
+" Show trailing whitespace and spaces before a tab:
+match ExtraWhitespace /\s\+$\| \+\ze\t/
