@@ -9,9 +9,9 @@ let delimitMate_expand_cr=1
 let delimitMate_expand_space=1
 
 set cindent
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=8
+set softtabstop=8
+set tabstop=8
 
 set rnu	"relative line numbering"
 set nu	"line numbering"
@@ -44,6 +44,9 @@ if &term =~ '256color'
   " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
   set t_ut=
 endif
+
+" terminal window transparency
+hi Normal ctermbg=none
 
 set incsearch " highlights searched string while typing "
 set laststatus=2
