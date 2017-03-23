@@ -61,6 +61,7 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+nnoremap <C-]> <C-]>z<CR>
 
 set nowrap
 set scrolloff=1
