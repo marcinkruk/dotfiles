@@ -84,4 +84,4 @@ nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 nnoremap <C-w>] <C-w>]<C-w>Tz<CR>
 
 " Wrap markdown files at 80 characters.
-au BufRead,BufNewFile *.md setlocal testwidth=80
+au BufRead,BufNewFile *.md setlocal textwidth=80
