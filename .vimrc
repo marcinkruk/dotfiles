@@ -82,3 +82,6 @@ nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 
 " Go to tag in a new tab instead of a new split.
 nnoremap <C-w>] <C-w>]<C-w>Tz<CR>
+
+" Wrap markdown files at 80 characters.
+au BufRead,BufNewFile *.md setlocal testwidth=80
